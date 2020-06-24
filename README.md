@@ -29,7 +29,7 @@ This function will:
 
 exemple with DR_USA_Intersection_GL/vehicle_tracks_022.csv, mean_traj, all the direction plot, all the trajectories scatter:
 
-<img src="IMAGE/traj_dire.png" width=800 height=400>
+<img src="IMAGE/traj_dire.png" width=800 height=520>
 
 ## intersections:
 
