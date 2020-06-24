@@ -6,7 +6,7 @@
 
 four main function has been defined: 
 
-#### directions:
+## directions:
 
 `df, df_dire, lost_rate = directions(df, dire_type = 'mean_dir', max_frame=None, min_frame=None)`
 
