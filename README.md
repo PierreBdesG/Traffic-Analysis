@@ -10,6 +10,8 @@ The term 'direction' denotes a set of trajectories that have the same entry and 
 four main function has been defined: 
 - [directions](#directions) 
 - [intersections](#intersections)
+- [crossovers](#crossovers)
+
 
 ## directions:
 
@@ -79,12 +81,14 @@ crossovers takes as input:
 
 And will compute `df_crossover` wich contains:
 
-   - identification of the 1st vehicle (track_id_1)
-    - the direction to which the first vehicle belongs (direction 1)
-    - the average speed at which the vehicle is close to the intersection (v_mean_1)
-    - identification of the 2nd vehicle (track_id_2)
-    - the direction to which the 2nd vehicle belongs (direction 2)
-    - the average speed at which the vehicle is close to the intersection (v_mean_2)
-    - the position of the crossover (position)
-    - the beginning of the moment they cross (t_max)
-    - the end of the moment they cross (t_min)
+- identification of the 1st vehicle `track_id_1`
+- the direction to which the first vehicle belongs `direction 1`
+- the average speed at which the vehicle is close to the intersection `v_mean_1`
+- identification of the 2nd vehicle `track_id_2`
+- the direction to which the 2nd vehicle belongs `direction 2`
+- the average speed at which the vehicle is close to the intersection `v_mean_2`
+- the position of the crossover `position`
+- the beginning of the moment they cross `t_max`
+- the end of the moment they cross `t_min`
+
+:warning: this fonction cannot work with a df which contain more than one .csv since each .csv as his own timeline
