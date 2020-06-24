@@ -37,9 +37,9 @@ exemple with DR_USA_Intersection_GL/vehicle_tracks_022.csv, mean_traj, all the d
 
 The purpose of this function is to find the interactions between the different directions.
 The interactions are classified into three types:
-- `None`: no interaction between the two trajectories.
-- `junction`: the trajectories merge at a certain point
-- `crossing`: trajectories cross each other 
+1. `None`: no interaction between the two trajectories.
+2. `junction`: the trajectories merge at a certain point
+3. `crossing`: trajectories cross each other 
 
 intersections take as input : 
 - `df_dire`: compute with `directions`.
@@ -47,10 +47,13 @@ intersections take as input :
 - `rmax` represents the radius at which an interaction is considered to be a junction. If rmax is very large, all interactions will be classified as crossing.
 
 and will compute `df_inter`
-df_inter contains: - the first direction `direction 1`
-                   - the second direction `direction 2` 
-                   - the point of interaction, if applicable `center`
-                   - the radius in case of an intersection `radius`
-                   - the type of intersection: `crossing`, `junction` or `None`
+df_inter contains: 
+- the first direction `direction 1`
+- the second direction `direction 2` 
+- the point of interaction, if applicable `center`
+- the radius in case of an intersection `radius`
+- the type of intersection: `crossing`, `junction` or `None`
+
+
 Note that to avoid repetition, `direction 1` < `direction 2`
 
