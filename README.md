@@ -27,11 +27,14 @@ This function will:
     - their entry point was on the first frame or their exit point was on the last frame.
     - the clustering algorithm failed to classify their entry or exit point.
 
-exemple with DR_USA_Intersection_GL/vehicle_tracks_022.csv, all the direction plot, all the trajectories scatter:
-
+exemple with DR_USA_Intersection_GL/vehicle_tracks_022.csv, mean_traj, all the direction plot, all the trajectories scatter:
 
 <img src="IMAGE/traj_dire.png" width=800 height=400>
 
-## directions:
+## intersections:
+
+`df_inter = intersections(df_dire, tol_rate=1.5, rmax=2)`
+
+intersections take as input : - df_dire, compute with `directions`.
 
 
