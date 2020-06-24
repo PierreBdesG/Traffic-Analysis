@@ -29,7 +29,9 @@ This function will:
 
 exemple with DR_USA_Intersection_GL/vehicle_tracks_004.csv, all the direction plot, all the trajectories scatter:
 
-![](IMAGE/drection_trajectories.png | width=100)
+
+<img src="IMAGE/drection_trajectories.png">
+![](IMAGE/drection_trajectories.png)
 
 ## directions:
 
