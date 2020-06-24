@@ -46,8 +46,7 @@ intersections take as input :
 - `tol_rate`: represents the acceptable distance between two directions to consider an interaction. The greater tol_rate, the more interactions will be detected. (which may be false)
 - `rmax` represents the radius at which an interaction is considered to be a junction. If rmax is very large, all interactions will be classified as crossing.
 
-and will compute `df_inter`
-df_inter contains: 
+and will compute `df_inter` wich contains: 
 - the first direction `direction 1`
 - the second direction `direction 2` 
 - the point of interaction, if applicable `center`
