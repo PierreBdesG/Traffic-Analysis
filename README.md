@@ -8,7 +8,8 @@ In this document I use the term 'trajectory' to define all the positions taken b
 The term 'direction' denotes a set of trajectories that have the same entry and exit point.
 
 four main function has been defined: 
-[directions](#directions) 
+- [directions](#directions) 
+- [intersections](#intersections)
 
 ## directions:
 
