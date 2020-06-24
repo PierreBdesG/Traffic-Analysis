@@ -78,7 +78,8 @@ crossovers takes as input:
 - `dist_cross`: the maximum distance from which a vehicle is considered to be close to the intersection.
 
 And will compute `df_crossover` wich contains:
-    - identification of the 1st vehicle (track_id_1)
+
+   - identification of the 1st vehicle (track_id_1)
     - the direction to which the first vehicle belongs (direction 1)
     - the average speed at which the vehicle is close to the intersection (v_mean_1)
     - identification of the 2nd vehicle (track_id_2)
