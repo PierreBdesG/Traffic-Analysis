@@ -35,25 +35,28 @@ exemple with DR_USA_Intersection_GL/vehicle_tracks_022.csv, mean_traj, all the d
 
 ## intersections:
 
-`df_inter = intersections(df_dire, tol_rate=1.5, rmax=2)`
+`df_inter = trajdect.intersections(df_dire, tol_rate=1.5, rmax=2)`
 
 The purpose of this function is to find the interactions between the different directions.
 The interactions are classified into three types:
 1. `None`: no interaction between the two trajectories.
 2. `junction`: the trajectories merge at a certain point
-3. `crossing`: trajectories cross each other 
+3. `crossover`: trajectories cross each other 
 
 intersections take as input : 
-- `df_dire`: compute with `directions`.
+- `df_dire`: compute with `trajdect.directions`.
 - `tol_rate`: represents the acceptable distance between two directions to consider an interaction. The greater tol_rate, the more interactions will be detected. (which may be false)
-- `rmax` represents the radius at which an interaction is considered to be a junction. If rmax is very large, all interactions will be classified as crossing.
+- `rmax` represents the radius at which an interaction is considered to be a junction. If rmax is very large, all interactions will be classified as crossover.
+
+it may be interesting to vary tol_rate and rmax according to each case to be better adapted to the situation.
+
 
 and will compute `df_inter` wich contains: 
 - the first direction `direction 1`
 - the second direction `direction 2` 
 - the point of interaction, if applicable `center`
 - the radius in case of an intersection `radius`
-- the type of intersection: `crossing`, `junction` or `None`
+- the type of intersection: `crossover`, `junction` or `None`
 
 
 Note that to avoid repetition, `direction 1` < `direction 2`
@@ -63,4 +66,14 @@ exemple with the df_dire compute above :
 
 <img src="IMAGE/intersection.png" width=600 height=300>
 
+## crossovers
+
+`df_crossover = trajdect.crossovers(df_inter, df, dist_cross = 10)`
+
+the purpose of this function is to detect, if two vehicles belonging to two intersecting trajectories, approach the intersection at the same time.
+
+crossovers takes as input:
+- `df_inter`: compute with `trajdect.intersections`
+- `df`: with the direction on each vehicle (obtained with `trajdect.direction`)
+- `dist_cross`: the maximum distance from which a vehicle is considered to be close to the intersection.
 
