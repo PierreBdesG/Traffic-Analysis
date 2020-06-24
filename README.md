@@ -19,8 +19,8 @@ If you want to use a df composed of several .csv, you will have to give as input
 
 
 This function will: 
-1 assign to each vehicle the direction it belongs to according to its trajectory and add it to df.
-2 définir une position representative pour chaque direction, deux fonction sont disponible:
+1. assign to each vehicle the direction it belongs to according to its trajectory and add it to df.
+2. définir une position representative pour chaque direction, deux fonction sont disponible:
     - mean_traj
     - first_traj
 
