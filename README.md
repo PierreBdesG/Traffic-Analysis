@@ -27,6 +27,7 @@ This function will:
     - their entry point was on the first frame or their exit point was on the last frame.
     - the clustering algorithm failed to classify their entry or exit point.
 
+exemple with DR_USA_Intersection_GL/vehicle_tracks_004.csv, all the direction plot, all the trajectories scatter.
 
 
 
