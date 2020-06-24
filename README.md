@@ -4,7 +4,7 @@
 
 **The purpose of the trajdect package is to analyze the data from the data set INTERACTION-Dataset-TC-v1_0**
 
-In this document I use the term 'trajectory' to define all the positions taken by a single vehicle.
+In this document we use the term 'trajectory' to define all the positions taken by a single vehicle.
 The term 'direction' denotes a set of trajectories that have the same entry and exit point.
 
 four main function has been defined: 
@@ -77,3 +77,13 @@ crossovers takes as input:
 - `df`: with the direction on each vehicle (obtained with `trajdect.direction`)
 - `dist_cross`: the maximum distance from which a vehicle is considered to be close to the intersection.
 
+And will compute `df_crossover` wich contains:
+    - identification of the 1st vehicle (track_id_1)
+    - the direction to which the first vehicle belongs (direction 1)
+    - the average speed at which the vehicle is close to the intersection (v_mean_1)
+    - identification of the 2nd vehicle (track_id_2)
+    - the direction to which the 2nd vehicle belongs (direction 2)
+    - the average speed at which the vehicle is close to the intersection (v_mean_2)
+    - the position of the crossover (position)
+    - the beginning of the moment they cross (t_max)
+    - the end of the moment they cross (t_min)
