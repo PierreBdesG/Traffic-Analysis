@@ -35,6 +35,30 @@ exemple with DR_USA_Intersection_GL/vehicle_tracks_022.csv, mean_traj, all the d
 
 <img src="IMAGE/traj_dire.png" width=600 height=300>
 
+## slowdowns:
+
+`df_slowdown = trajdect.slowdowns(df, direction, discr=20, slow_rate)`
+
+This function allows us to detect slowdowns in a direction.
+It calculates the average speed over n=`discr`^2 zones spread over all the trajectories that have the same direction.
+For each vehicle at any moment we look at which zone it belongs to and compare its speed with the average speed (v_mean) of the zone it belongs to.
+If speed<`slow_rate` * avg_speed we consider this vehicle to be unusually slow and classify it as slowdowns
+
+It takes as input:
+ - `df`: with the direction on each vehicle (obtained with `trajdect.direction`)
+ - `direction`: la direction sur la quel on veut trouver les ralentissement
+ - `discr`: qui va definir le nombre de zone calculé (discr^2)
+ - `slow_rate`: le ratio a partir du quel une vitesse est considéré comme un ralentissement (plus slow_rate est grand plus on trouvera de ralentissement)
+
+
+and will compute `df_slowdown` wich contains:
+- the identification of the vehicle `track_id`
+- the speed at which he goes during the slowdown.
+- the average speed at which the other vehicles in that zone are travelling `v_mean`.
+- the moment at which it is considered that the vehicle is starting to be too slow `t_min`.
+- the moment the vehicle resumes normal speed `t_max`.
+
+
 ## intersections:
 
 `df_inter = trajdect.intersections(df_dire, tol_rate=1.5, rmax=2)`
