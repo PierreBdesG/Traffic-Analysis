@@ -59,7 +59,7 @@ and will compute `df_slowdown` wich contains:
 - the moment at which it is considered that the vehicle is starting to be too slow `t_min`.
 - the moment the vehicle resumes normal speed `t_max`.
 
-As an exemple we have merged all the csv of the DR_USA_Intersection_GL data set, compute all the direction and then all the slowdowns of every direction with `discr` = 20 and `slow_rate` = 0.5.
+As an exemple we have merged all the csv of the DR_USA_Intersection_GL data set. We have compute all the direction and then all the slowdowns of every direction with `discr` = 20 and `slow_rate` = 0.5.
 You can find the result [here](DR_USA_Intersection_GL_slowdown_slow_rate=0.5_discr=20)
 
 
