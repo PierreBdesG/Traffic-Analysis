@@ -4,6 +4,9 @@
 
 **The purpose of the trajdect package is to analyze the data from the data set INTERACTION-Dataset-TC-v1_0**
 
+
+you can view all csv using this [tool](https://github.com/interaction-dataset/interaction-dataset)
+
 In this document we use the term 'trajectory' to define all the positions taken by a single vehicle.
 The term 'direction' denotes a set of trajectories that have the same entry and exit point.
 
