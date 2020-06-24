@@ -9,6 +9,7 @@ The term 'direction' denotes a set of trajectories that have the same entry and 
 
 four main function has been defined: 
 - [directions](#directions) 
+- [slowdowns](#slowdowns)
 - [intersections](#intersections)
 - [crossovers](#crossovers)
 
