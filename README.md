@@ -56,3 +56,9 @@ and will compute `df_inter` wich contains:
 
 Note that to avoid repetition, `direction 1` < `direction 2`
 
+
+exemple with the df_dire compute above =:
+
+<img src="IMAGE/intersection.png" width=600 height=300>
+
+
