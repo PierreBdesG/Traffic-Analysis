@@ -41,7 +41,7 @@ exemple with DR_USA_Intersection_GL/vehicle_tracks_022.csv, mean_traj, all the d
 
 ## slowdowns:
 
-`df_slowdown = trajdect.slowdowns(df, direction, discr=20, slow_rate)`
+`df_slowdown = trajdect.slowdowns(df, direction, slow_rate, discr=20)`
 
 This function allows us to detect slowdowns in a direction.
 It calculates the average speed over n=`discr`^2 zones spread over all the trajectories that have the same direction.
