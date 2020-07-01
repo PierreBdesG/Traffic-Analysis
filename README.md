@@ -50,9 +50,9 @@ If speed<`slow_rate` * avg_speed we consider this vehicle to be unusually slow a
 
 It takes as input:
  - `df`: with the direction on each vehicle (obtained with `trajdect.direction`)
- - `direction`: la direction sur la quel on veut trouver les ralentissement
- - `discr`: qui va definir le nombre de zone calculé (discr^2)
- - `slow_rate`: le ratio a partir du quel une vitesse est considéré comme un ralentissement (plus slow_rate est grand plus on trouvera de ralentissement)
+ - `direction`: the direction in which we want to find the slowdown...
+ - `discr`: discr: which will define the number of computed zone (discr^2)
+ - `slow_rate`:  the ratio from which a speed is considered as a slowdown 
 
 
 and will compute `df_slowdown` wich contains:
